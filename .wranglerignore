@@ -1,0 +1,13 @@
+# Git files
+.git
+.git/**
+
+# Node modules
+node_modules
+node_modules/**
+
+# Large PDFs that exceed 25MB limit
+Bunninadden 2000 Commemoration/Match Programme Sligo County Final.pdf
+Bunninadden 2000 Commemoration/Match Programme Connacht Semi Final.pdf
+Bunninadden 2000 Commemoration/Team Photos 2000.pdf
+
