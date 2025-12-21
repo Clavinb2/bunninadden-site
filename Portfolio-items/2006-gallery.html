@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>2006 County Final | Bunninadden GAA</title>
+
+    <meta name="description" content="Bunninadden GAA 2006 Sligo Senior Football Championship Final vs Curry">
+    <meta name="author" content="Barry Clavin">
+    <meta name="keywords" content="Bunninadden, GAA, 2006, County Final, Curry">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/bunninadden-icon.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/bunninadden-icon.webp">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .match-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .match-header h2 {
+            color: #2ecc71;
+            margin-bottom: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .score-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .team-score {
+            text-align: center;
+        }
+        .team-score .team-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .team-score .score {
+            font-size: 48px;
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        .team-score.winner .score {
+            color: #f1c40f;
+        }
+        .vs-divider {
+            font-size: 24px;
+            color: #888;
+        }
+        .halftime-score {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 15px;
+        }
+        .match-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .match-info-item {
+            text-align: center;
+        }
+        .match-info-item i {
+            color: #2ecc71;
+            margin-right: 5px;
+        }
+        .match-info-item span {
+            color: #ccc;
+            font-size: 14px;
+        }
+        .team-lineup {
+            background-color: #f5f5f8;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .team-lineup h3 {
+            color: #333;
+            border-bottom: 3px solid #2ecc71;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .team-lineup.bunninadden h3 {
+            border-bottom-color: #2ecc71;
+        }
+        .team-lineup.curry h3 {
+            border-bottom-color: #e74c3c;
+        }
+        .lineup-section {
+            margin-bottom: 15px;
+        }
+        .lineup-section h5 {
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .player-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .player {
+            background: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .player .score-contribution {
+            color: #2ecc71;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .substitutes {
+            border-top: 1px dashed #ddd;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        .manager-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #666;
+        }
+        .section-title {
+            color: #2ecc71;
+            border-bottom: 2px solid #2ecc71;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header id="masthead" class="site-header site-header-white">
+        <nav id="primary-navigation" class="site-navigation" >
+            <div class="container">
+
+                <div class="navbar-header">
+                   
+                <a href="../index.html">
+                    <img src="../assets/img/bunninadden-icon.webp" alt="Bunninadden GAA Logo">
+                </a>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li><a href="../portfolio.html">Gallery</a></li>
+                              <li><a href="../blog.html">Blog</a></li>
+                              <li><a href="../child-protection.html">Child Protection</a></li>
+                              <li><a href="../membership.html">Membership Information</a></li>
+                              <li><a href="../Officers.html">Officers</a></li>
+                              <li><a href="../sligogaa.html">Results</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="../portfolio.html">Gallery</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../history.html">History</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>   
+        </nav><!-- /.site-navigation -->
+    </header><!-- /#mastheaed -->
+
+    <div id="hero" class="hero overlay subpage-hero portfolio-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>2006 County Final</h1>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="../portfolio.html">Portfolio</a></li>
+                  <li class="breadcrumb-item active">2006 County Final</li>
+                </ol>
+            </div><!-- /.hero-text -->
+        </div><!-- /.hero-content -->
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section class="site-section subpage-site-section section-project">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        
+                        <!-- Match Header -->
+                        <div class="match-header">
+                            <h2>Sligo Senior Football Championship Final</h2>
+                            <div class="score-display">
+                                <div class="team-score winner">
+                                    <div class="team-name">Curry</div>
+                                    <div class="score">1-15</div>
+                                </div>
+                                <div class="vs-divider">-</div>
+                                <div class="team-score">
+                                    <div class="team-name">Bunninadden</div>
+                                    <div class="score">2-9</div>
+                                </div>
+                            </div>
+                            <div class="halftime-score">
+                                <strong>Half-time:</strong> Curry 0-4 | Bunninadden 2-4
+                            </div>
+                            <div class="match-info">
+                                <div class="match-info-item">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>Sunday, 24 September 2006</span>
+                                </div>
+                                <div class="match-info-item">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <span>15:30</span>
+                                </div>
+                                <div class="match-info-item">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Markievicz Park, Sligo</span>
+                                </div>
+                                <div class="match-info-item">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span>Ref: Marty Duffy (Enniscrone)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bunninadden Lineup -->
+                        <div class="team-lineup bunninadden">
+                            <h3><i class="fa fa-shield" aria-hidden="true"></i> Bunninadden</h3>
+                            <div class="manager-info">Manager: Brian Touhy</div>
+                            
+                            <div class="lineup-section">
+                                <h5>Goalkeeper</h5>
+                                <div class="player-row">
+                                    <span class="player">D. Flannery</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Full-Back Line</h5>
+                                <div class="player-row">
+                                    <span class="player">P. McGettrick</span>
+                                    <span class="player">S. Roddy</span>
+                                    <span class="player">T. Gormley</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Half-Back Line</h5>
+                                <div class="player-row">
+                                    <span class="player">B. Gilhooley</span>
+                                    <span class="player">E. Gilhooley</span>
+                                    <span class="player">S. Leamy</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Midfield</h5>
+                                <div class="player-row">
+                                    <span class="player">P. Doohan <span class="score-contribution">(0-2)</span></span>
+                                    <span class="player">F. O'Flaherty <span class="score-contribution">(0-1)</span></span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Half-Forward Line</h5>
+                                <div class="player-row">
+                                    <span class="player">L. Óg Gormley</span>
+                                    <span class="player">Mark Gormley <span class="score-contribution">(0-1)</span></span>
+                                    <span class="player">Michael Gormley</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Full-Forward Line</h5>
+                                <div class="player-row">
+                                    <span class="player">S. McHugh <span class="score-contribution">(2-0)</span></span>
+                                    <span class="player">K. Kerins <span class="score-contribution">(0-1)</span></span>
+                                    <span class="player">W. Gormley <span class="score-contribution">(0-3)</span></span>
+                                </div>
+                            </div>
+
+                            <div class="substitutes">
+                                <h5>Substitutes</h5>
+                                <div class="player-row">
+                                    <span class="player">T. McLoughlin <span class="score-contribution">(0-1)</span></span>
+                                    <span class="player">T. Davey</span>
+                                    <span class="player">J. O'Flaherty</span>
+                                    <span class="player">S. Kerins</span>
+                                    <span class="player">A. Killoran</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Curry Lineup -->
+                        <div class="team-lineup curry">
+                            <h3><i class="fa fa-shield" aria-hidden="true"></i> Curry</h3>
+                            <div class="manager-info">Manager: Denis Kearney</div>
+                            
+                            <div class="lineup-section">
+                                <h5>Goalkeeper</h5>
+                                <div class="player-row">
+                                    <span class="player">J. Durcan</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Full-Back Line</h5>
+                                <div class="player-row">
+                                    <span class="player">P. Walsh</span>
+                                    <span class="player">J. Hayes</span>
+                                    <span class="player">B. Collins</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Half-Back Line</h5>
+                                <div class="player-row">
+                                    <span class="player">S. Haran</span>
+                                    <span class="player">J. Feeney</span>
+                                    <span class="player">S. Marren</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Midfield</h5>
+                                <div class="player-row">
+                                    <span class="player">G. Maye</span>
+                                    <span class="player">B. McDonagh</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Half-Forward Line</h5>
+                                <div class="player-row">
+                                    <span class="player">S. Davey <span class="score-contribution">(0-3)</span></span>
+                                    <span class="player">K. Morley <span class="score-contribution">(1-1)</span></span>
+                                    <span class="player">K. Giblin</span>
+                                </div>
+                            </div>
+
+                            <div class="lineup-section">
+                                <h5>Full-Forward Line</h5>
+                                <div class="player-row">
+                                    <span class="player">J. Marren <span class="score-contribution">(0-1)</span></span>
+                                    <span class="player">A. Marren <span class="score-contribution">(0-8)</span></span>
+                                    <span class="player">D. McDonagh</span>
+                                </div>
+                            </div>
+
+                            <div class="substitutes">
+                                <h5>Substitutes</h5>
+                                <div class="player-row">
+                                    <span class="player">A. Brennan <span class="score-contribution">(0-2)</span></span>
+                                    <span class="player">P. Durcan</span>
+                                    <span class="player">S. Colleary</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="section-title">Photo Gallery</h2>
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-4-Team.jpg" class="img-res" alt="Bunninadden Team 2006">
+                            <p>Bunninadden Team - County Final 2006</p>
+                        </div><!-- /.project-img -->
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-1.jpg" class="img-res" alt="County Final 2006">
+                            <p>County Final 2006 Action</p>
+                        </div><!-- /.project-img -->
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-2.jpg" class="img-res" alt="County Final 2006">
+                            <p>County Final 2006 Action</p>
+                        </div><!-- /.project-img -->
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-3.jpg" class="img-res" alt="County Final 2006">
+                            <p>County Final 2006 Action</p>
+                        </div><!-- /.project-img -->
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-5.jpg" class="img-res" alt="County Final 2006">
+                            <p>County Final 2006 Action</p>
+                        </div><!-- /.project-img -->
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-6.jpg" class="img-res" alt="County Final 2006">
+                            <p>County Final 2006 Action</p>
+                        </div><!-- /.project-img -->
+
+                        <div class="project-img">
+                            <img src="../assets/img/2006-county-final-7.jpg" class="img-res" alt="County Final 2006">
+                            <p>County Final 2006 Action</p>
+                        </div><!-- /.project-img -->
+
+                    </div>
+                    <aside class="col-md-4">
+                        <div class="project-info">
+                            <h5>Match Summary</h5>
+
+                            <p class="project-description">Bunninadden reached the 2006 Sligo Senior Football Championship Final, facing local rivals Curry at Markievicz Park. Despite leading 2-4 to 0-4 at half-time thanks to two goals from S. McHugh, Curry fought back strongly in the second half. A. Marren's 8 points proved decisive as Curry outscored Bunninadden by 11 points to 5 in the second period to claim a 3-point victory.</p>
+
+                            <div class="project-date-category">
+                                <p><span>Competition:</span> Sligo SFC Final</p>
+                                <p><span>Date:</span> 24 September 2006</p>
+                                <p><span>Venue:</span> Markievicz Park</p>
+                                <p><span>Result:</span> Curry 1-15, Bunninadden 2-9</p>
+                                <p><span>Manager:</span> Brian Touhy</p>
+                            </div><!-- /.project-cat -->
+
+                            <h5 style="margin-top: 20px;">Match Rules</h5>
+                            <ul style="list-style: none; padding: 0; font-size: 14px; color: #666;">
+                                <li><i class="fa fa-clock-o" aria-hidden="true"></i> 60 minutes</li>
+                                <li><i class="fa fa-refresh" aria-hidden="true"></i> Replay if scores still level</li>
+                                <li><i class="fa fa-exchange" aria-hidden="true"></i> Maximum of 5 substitutions</li>
+                            </ul>
+
+                            <h5 style="margin-top: 20px;">Top Scorers</h5>
+                            <p style="font-size: 14px;"><strong>Bunninadden:</strong></p>
+                            <ul style="list-style: none; padding: 0; font-size: 14px; color: #666;">
+                                <li>W. Gormley: 0-3</li>
+                                <li>S. McHugh: 2-0</li>
+                                <li>P. Doohan: 0-2</li>
+                            </ul>
+                            <p style="font-size: 14px;"><strong>Curry:</strong></p>
+                            <ul style="list-style: none; padding: 0; font-size: 14px; color: #666;">
+                                <li>A. Marren: 0-8</li>
+                                <li>S. Davey: 0-3</li>
+                                <li>A. Brennan: 0-2</li>
+                            </ul>
+
+                            <div class="social-links">
+                                <a class="twitter-bg" href="https://x.com/bunninaddengaa"><i class="fa fa-twitter"></i>X</a>
+                                <a class="facebook-bg" href="https://www.facebook.com/bunninaddengaaclub/"><i class="fa fa-facebook"></i>Facebook</a>
+                            </div><!-- /.social-links -->
+                            
+                        </div><!-- /.project-description -->
+                    </aside>
+                </div>
+            </div>
+            
+        </section><!-- /.section-project -->
+
+        <section class="site-section subpage-site-section section-related-projects">
+            <div class="container">
+                <div class="text-left">
+                    <h2>Related Galleries</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="../2025 photos/Bunninadden v Owenmore Gaels/Team Photo landscape.jpg" class="img-res" alt="2025 Team">
+                            <h4 class="portfolio-item-title">2025 Season</h4>
+                            <a href="2025-gallery.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="../assets/img/Intermediate-2012-final-champions.jpg" class="img-res" alt="2012 Champions">
+                            <h4 class="portfolio-item-title">2012 Intermediate Final</h4>
+                            <a href="2012-gallery.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="../assets/img/2000-senior-champions.jpg" class="img-res" alt="2000 Senior Champions">
+                            <h4 class="portfolio-item-title">2000 Commemoration</h4>
+                            <a href="2000-commemoration.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="../assets/img/Bunninadden-2021-junior-win.jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Teams through the years</h4>
+                            <a href="Teams-through-the-ages.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-portfolio -->
+
+    </main><!-- /#main -->
+
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <a class="site-title"><span>Bunninadden GAA</span></a>
+                    <p>We're a small but strong club in the heart of south Sligo.</p>
+                    <p>We measure our success by the results we drive for.</p>
+                </div>
+                <div class="col-lg-offset-4 col-md-3 col-sm-4 col-md-offset-2 col-sm-offset-0 col-xs-6 ">
+                    <h3>Keep in touch</h3>
+                    <ul class="list-unstyled contact-links">
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:pro.bunninadden.sligo@gaa.ie">Email PRO</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:Secretary.bunninadden.sligo@gaa.ie">Email Secretary</a></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.com/maps/place/Bunninadden+GAA+Club/@54.0389322,-8.5778107,238m/data=!3m1!1e3!4m5!3m4!1s0x0:0xa1095db0f21fe07f!8m2!3d54.0389893!4d-8.5761912">2CQF+JH Bunninadden</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <h3>Featured links</h3>
+                    <ul class="list-unstyled">
+                        <li class="active"><a href="../index.html">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../portfolio.html">Gallery</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="social-links">
+                            <a class="twitter-bg" href="https://x.com/bunninaddengaa"><i class="fa fa-twitter"></i>X</a>
+                            <a class="facebook-bg" href="https://www.facebook.com/bunninaddengaaclub/"><i class="fa fa-facebook"></i>Facebook</a>
+                        </div><!-- /.social-links -->
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="text-right">
+                            <p>&copy; Barry Clavin</p>
+                            <p>All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.copyright -->
+    </footer><!-- /#footer -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../assets/js/jquery.countTo.min.js"></script>
+    <script src="../assets/js/jquery.shuffle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  
+</body>
+</html>
+
