@@ -7,19 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Contact | Bunninadden GAA</title>
+    <title>Search | Bunninadden GAA</title>
 
-    <meta name="description" content="Contact Bunninadden GAA Club. Get in touch with our club officers, find our location in South Sligo, and connect with us on social media.">
+    <meta name="description" content="Search the Bunninadden GAA website for pages, news, galleries, and information.">
     <meta name="author" content="Barry Clavin">
-    <meta name="keywords" content="Bunninadden, GAA, Contact, Sligo, Location">
-
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bunninadden.pages.dev/contact.html">
-    <meta property="og:title" content="Contact | Bunninadden GAA">
-    <meta property="og:description" content="Contact Bunninadden GAA Club. Find our location and connect with us.">
-    <meta property="og:image" content="https://bunninadden.pages.dev/assets/img/bunninadden-icon.webp">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="Bunninadden, GAA, Search, Sligo">
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -46,11 +38,113 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+        .search-results {
+            margin-top: 30px;
+        }
+        
+        .search-result-item {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .search-result-item:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+        
+        .search-result-item h3 {
+            margin-top: 0;
+            color: #1B1E21;
+        }
+        
+        .search-result-item h3 a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .search-result-item h3 a:hover {
+            text-decoration: underline;
+        }
+        
+        .search-result-url {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .search-result-snippet {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .search-highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+            font-weight: 600;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        
+        .no-results i {
+            font-size: 64px;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .search-stats {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .search-form-large {
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        
+        .search-form-large .form-group {
+            position: relative;
+        }
+        
+        .search-form-large input {
+            padding: 15px 50px 15px 20px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+        .search-form-large input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        
+        .search-form-large button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .search-form-large button:hover {
+            background: #45a049;
+        }
+    </style>
 
 </head>
 <body>
@@ -76,7 +170,7 @@
                         <li class="search-item">
                             <form class="navbar-form navbar-left" role="search" action="search.html" method="get">
                                 <div class="form-group">
-                                    <input type="text" class="form-control search-input" name="q" placeholder="Search..." aria-label="Search">
+                                    <input type="text" class="form-control search-input" name="q" placeholder="Search..." aria-label="Search" id="header-search">
                                     <button type="submit" class="btn btn-search" aria-label="Submit search">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </button>
@@ -98,9 +192,9 @@
                         </li>
                         <li><a href="portfolio.html">Gallery</a></li>
                         <li><a href="blog.html">Recent News</a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
-                        <li><a href="history.html">History</a></li>
-                        
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="active"><a href="history.html">History</a></li>
+
                     </ul>
 
                 </div>
@@ -109,51 +203,46 @@
         </nav><!-- /.site-navigation -->
     </header><!-- /#mastheaed -->
 
-    <div id="hero" class="hero overlay subpage-hero contact-hero">
+    <div id="hero" class="hero overlay subpage-hero portfolio-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Contact</h1>
+                <h1>Search</h1>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Contact</li>
+                  <li class="breadcrumb-item active">Search</li>
                 </ol>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
     </div><!-- /.hero -->
 
- <h2 id="main-content">Send a message</h2>
-<form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="64a59fdd-120a-41c8-b40c-4e5643dddb42">
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-    
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-        </div>
-        
-        <div class="col-sm-6">
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-        </div>
+    <main id="main" class="site-main">
 
-        <div class="col-sm-12">
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            </div>
-        </div>
-        
-        <div class="col-sm-12 text-center">
-            <button type="submit" class="btn btn-green">Submit</button>
-        </div>
-    </div>
-</form>
+        <section id="main-content" class="site-section section-ui-elements">
+            <div class="container">
 
+                <div class="search-form-large">
+                    <form role="search" action="search.html" method="get">
+                        <div class="form-group">
+                            <input type="text" name="q" placeholder="Search for pages, news, galleries..." value="" id="main-search" autofocus>
+                            <button type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i> Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="search-results" class="search-results">
+                    <div class="no-results">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <h3>Enter a search term to find pages, news, and galleries</h3>
+                        <p>Try searching for: "2025", "championship", "gallery", "officers", or "history"</p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- /.section-ui-elements -->
+
+    </main><!-- /#main -->
 
     <footer id="colophon" class="site-footer">
         <div class="container">
@@ -167,18 +256,18 @@
                     <h3>Keep in touch</h3>
                     <ul class="list-unstyled contact-links">
                         <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:pro.bunninadden.sligo@gaa.ie">Email PRO</a></li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:Secretary.bunninadden.sligo@gaa.ie">Email Secretary </a></li>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i><p>Bunninadden, Co. Sligo</p></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:Secretary.bunninadden.sligo@gaa.ie">Email Secretary</a></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.com/maps/place/Bunninadden+GAA+Club/@54.0389322,-8.5778107,238m/data=!3m1!1e3!4m5!3m4!1s0x0:0xa1095db0f21fe07f!8m2!3d54.0389893!4d-8.5761912">2CQF+JH Bunninadden</a></li>
                     </ul>
                 </div>
                 <div class="clearfix visible-xs"></div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
                     <h3>Featured links</h3>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="portfolio.html"></a></li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -204,7 +293,6 @@
     </footer><!-- /#footer -->
 
 
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -214,6 +302,11 @@
     <script src="assets/js/jquery.slicknav.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/jquery.shuffle.min.js"></script>
+    
+    <!-- Fuse.js for search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+    
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- Back to Top Button -->
@@ -223,3 +316,4 @@
   
 </body>
 </html>
+

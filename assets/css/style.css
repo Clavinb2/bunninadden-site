@@ -128,6 +128,67 @@
     opacity: 0.9;
 }
 
+/* Search Bar Styling */
+.navbar-form {
+    margin: 0;
+    padding: 8px 15px;
+}
+
+.search-item {
+    padding: 8px 0;
+}
+
+.search-item .form-group {
+    position: relative;
+    margin: 0;
+}
+
+.search-item .search-input {
+    width: 200px;
+    padding: 8px 35px 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.search-item .search-input:focus {
+    width: 250px;
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.search-item .btn-search {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #666;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-item .btn-search:hover {
+    color: #4CAF50;
+}
+
+@media (max-width: 767px) {
+    .search-item {
+        padding: 10px 15px;
+    }
+    
+    .search-item .search-input {
+        width: 100%;
+    }
+    
+    .search-item .search-input:focus {
+        width: 100%;
+    }
+}
+
  /* TABLE OF CONTENT 
 *
 * - CUSTOM RESETS
