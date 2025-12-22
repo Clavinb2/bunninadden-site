@@ -1,0 +1,10 @@
+# Robots.txt for Bunninadden GAA Website
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bunninadden.pages.dev/sitemap.xml
+
+# Disallow admin or private areas (none currently)
+# Disallow: /admin/
+
