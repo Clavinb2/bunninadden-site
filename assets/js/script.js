@@ -174,6 +174,28 @@ $(function () {
     shuffleme.init(); //filter portfolio
   };
 
+  // Initialize GLightbox for image galleries
+  if (typeof GLightbox !== 'undefined') {
+    const lightbox = GLightbox({
+      selector: 'a[data-glightbox]',
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false,
+      openEffect: 'fade',
+      closeEffect: 'fade',
+      slideEffect: 'slide',
+      moreText: 'See more',
+      moreLength: 60,
+      closeButton: true,
+      touchFollowAxis: true,
+      keyboardNavigation: true,
+      closeOnOutsideClick: true,
+      dragAutoSnap: true,
+      dragToleranceX: 40,
+      dragToleranceY: 65
+    });
+  }
+
 }());
 
 // GoogleMap

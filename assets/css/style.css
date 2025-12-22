@@ -67,6 +67,67 @@
     }
 }
 
+/* GLightbox Custom Styling */
+.glightbox-clean .gslide-description {
+    background: rgba(27, 30, 33, 0.95);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.glightbox-clean .gslide-title {
+    color: #4CAF50;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.glightbox-clean .gclose {
+    background: rgba(27, 30, 33, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.glightbox-clean .gclose:hover {
+    background: #4CAF50;
+    opacity: 1;
+}
+
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+    background: rgba(27, 30, 33, 0.8);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.glightbox-clean .gnext:hover,
+.glightbox-clean .gprev:hover {
+    background: #4CAF50;
+    opacity: 1;
+}
+
+.glightbox-clean .gslide-media {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.project-img a {
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.project-img a:hover {
+    opacity: 0.9;
+}
+
  /* TABLE OF CONTENT 
 *
 * - CUSTOM RESETS
