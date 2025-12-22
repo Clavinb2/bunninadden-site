@@ -1,5 +1,21 @@
 $(function () {
 
+  // Back to Top Button
+  var backToTop = $('.back-to-top');
+  
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+      backToTop.addClass('visible');
+    } else {
+      backToTop.removeClass('visible');
+    }
+  });
+  
+  backToTop.click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 500);
+  });
+
   var delay=0, setTimeoutConst;
   $('.site-navigation:not(.onclick) .navbar-nav>li.dropdown, .site-navigation:not(.onclick) li.dropdown>ul>li.dropdown').hover(
   function(){
