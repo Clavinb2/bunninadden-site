@@ -6,6 +6,25 @@
  * Version: 1.0
  * */
 
+/* Skip to content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1B1E21;
+    color: white;
+    padding: 8px 16px;
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 2px solid #4CAF50;
+}
+
  /* TABLE OF CONTENT 
 *
 * - CUSTOM RESETS
