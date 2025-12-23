@@ -175,6 +175,70 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
+        
+        /* Responsive Score Display */
+        @media (max-width: 767px) {
+            .match-header {
+                padding: 20px 15px;
+            }
+            
+            .score-display {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .vs-divider {
+                font-size: 18px;
+                transform: rotate(90deg);
+                margin: 5px 0;
+            }
+            
+            .team-score .team-name {
+                font-size: 20px;
+            }
+            
+            .team-score .score {
+                font-size: 36px;
+            }
+            
+            .halftime-score {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+            
+            .match-info {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+            }
+            
+            .match-info-item {
+                font-size: 13px;
+            }
+        }
+        
+        @media (max-width: 479px) {
+            .match-header {
+                padding: 15px 10px;
+            }
+            
+            .match-header h2 {
+                font-size: 14px;
+            }
+            
+            .team-score .team-name {
+                font-size: 18px;
+            }
+            
+            .team-score .score {
+                font-size: 32px;
+            }
+            
+            .halftime-score {
+                font-size: 11px;
+                line-height: 1.4;
+            }
+        }
     </style>
 
 </head>
