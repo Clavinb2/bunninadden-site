@@ -1,84 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bunninadden.pages.dev/</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/portfolio.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/history.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/blog.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/contact.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Officers.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/membership.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/child-protection.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/2000-commemoration.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/2006-gallery.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/2012-gallery.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/2021-gallery.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/2022-gallery.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/2025-gallery.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/Portfolio-items/Teams-through-the-ages.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bunninadden.pages.dev/search.html</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.5</priority>
-  </url>
-</urlset>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
+<url>
+  <loc>https://bunninaddengaa.ie/</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/portfolio</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/blog</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/child-protection</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Officers</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/membership</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/sligogaa</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/contact</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/history</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/2025-gallery</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/2000-commemoration</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/2012-gallery</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/Teams-through-the-ages</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/2021-gallery</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/2006-gallery</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/blog-posts/blog-post</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/assets/img/Club%20Safeguarding%20Statement%202025.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Portfolio-items/2022-gallery</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Match%20Programme%20Sligo%20County%20Final_compressed.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Match%20Programme%20Connacht%20Semi%20Final_compressed.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Team%20Photos%202000_compressed.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Final%20Whistle%20Photo.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/K%20Brett%20Tackles%20J%20McPartland.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/M%20Gormley%20%26%20K%20Brett%20Post-Match%20Embrace.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Players%20Day%20After%20Photo%20%28Kennedys%29.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Scrapbook%20Padraig%20Doohan_compressed.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Photos%20from%20Padraig_s%20Scrapbook.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Scrapbook%20Kieran%20Brett%20Part%201_compressed.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Scrapbook%20Kieran%20Brett%20Part%202_compressed.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Good%20Luck%20Card%20from%20M%20Gormley%20to%20K%20Brett.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bunninaddengaa.ie/Bunninadden%202000%20Commemoration/Congratulations%20Card%20from%20M%20Gormley%20to%20K%20Brett.pdf</loc>
+  <lastmod>2025-12-25T19:08:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
