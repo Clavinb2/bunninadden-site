@@ -221,13 +221,13 @@
 	}
 
 	.navbar-header {
-		max-width: calc(100% - 60px);
+		max-width: calc(100% - 70px);
 		overflow: hidden;
 	}
 
 	.navbar-header img {
-		max-width: 120px;
-		max-height: 60px;
+		max-width: 150px;
+		max-height: 75px;
 		width: auto;
 		height: auto;
 		object-fit: contain;
