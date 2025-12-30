@@ -220,6 +220,19 @@
 		padding-left: 15px;
 	}
 
+	.navbar-header {
+		max-width: calc(100% - 60px);
+		overflow: hidden;
+	}
+
+	.navbar-header img {
+		max-width: 120px;
+		max-height: 60px;
+		width: auto;
+		height: auto;
+		object-fit: contain;
+	}
+
 	/* Navigation */
 	.site-navigation {
 		position: sticky;
